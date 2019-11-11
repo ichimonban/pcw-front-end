@@ -161,7 +161,7 @@ div.HomePage__left * {
 		.rc-steps-item.rc-steps-item-wait.Page__title--content.false.finish .rc-steps-item-icon		{
 			background-color: #0065FF;
 			border: none;
-			z-index: 10;
+			z-index: 100;
 		}
 	.rc-steps-vertical .rc-steps-item-process .rc-steps-item-title,
 	.rc-steps-item.rc-steps-item-wait.Page__title--content.false.finish .rc-steps-item-title,
@@ -186,6 +186,12 @@ div.HomePage__left * {
 	color: #FFFFFF;
 }
 
+.rc-steps-vertical .rc-steps-item-tail {
+	top: -5px;
+	width: 7px;
+	
+}
+
 .rc-steps-item.rc-steps-item-process.Page__title--content  .rc-steps-item-tail,
 .rc-steps-item.rc-steps-item-process.Page__title--content  .rc-steps-item-tail:after,
 .rc-steps-item.rc-steps-item-wait.Page__title--content.false.finish .rc-steps-item-tail,
@@ -194,9 +200,21 @@ div.HomePage__left * {
 .rc-steps-item.rc-steps-item-wait.Page__title--content.currentPage.finish .rc-steps-item-tail:after,
 .rc-steps-item.rc-steps-item-process.Page__title--content.currentPage.finish.rc-steps-item-active .rc-steps-item-tail,
 .rc-steps-item.rc-steps-item-process.Page__title--content.currentPage.finish.rc-steps-item-active .rc-steps-item-tail:after {
-	background-color: #0065FF; border: 1px solid #0065FF; Z-index: 1; 
+	background-color: #0065FF; border: 1px solid #0065FF; Z-index: -5; 
 }
 
+.rc-steps-item.rc-steps-item-process.Page__title--content  .rc-steps-item-tail:after,
+.rc-steps-item.rc-steps-item-wait.Page__title--content.false.finish .rc-steps-item-tail:after,
+.rc-steps-item.rc-steps-item-wait.Page__title--content.currentPage.finish .rc-steps-item-tail:after,
+.rc-steps-item.rc-steps-item-process.Page__title--content.currentPage.finish.rc-steps-item-active .rc-steps-item-tail:after
+	{	 }
+.rc-steps-item.rc-steps-item-process.Page__title--content  .rc-steps-item-tail,
+.rc-steps-item.rc-steps-item-wait.Page__title--content.false.finish .rc-steps-item-tail,
+.rc-steps-item.rc-steps-item-wait.Page__title--content.currentPage.finish .rc-steps-item-tail,
+.rc-steps-item.rc-steps-item-process.Page__title--content.currentPage.finish.rc-steps-item-active .rc-steps-item-tail
+	{	 }
+.rc-steps-vertical .rc-steps-item.rc-steps-item-wait.Page__title--content.false.false .rc-steps-item-tail:after
+	{	width: 7px; margin-left: -1px; margin-top: 2px; background-color: #ADADAD; }
 
 /*-- Questions --*/
 
@@ -212,6 +230,48 @@ div.Question__container {
 	background-color: #FFFFFF;
 	border-radius: 0px; border: none;
 }
+
+
+/*-- Paging --*/
+
+.HomePage__pagination {	padding-top: 16px; height: 42px; background-color: rgba(250,250,250,0.8); }
+
+.PageNumber__box {
+	margin: 4px 0 0; padding: 16px 16px 12px; min-width: 36px; height: 36px;
+	border-radius: 0px; border-width: 4px; border-color: #FFFFFF;
+	background-color: #FFFFFF;
+	font-size: 1rem; color: #ADADAD;
+}
+.PageNumber__box:hover {	background-color: #FFFFFF; font-weight: bold; }
+
+.PageNumber__box.highlight,
+.PageNumber__box.highlight:active {	
+	background-color: #FFFFFF; 
+	border-bottom-width: 4px; border-bottom-color: Magenta; border-radius: 0 0 6px 6px;
+	font-weight: bold; color: #000000;
+}
+.PageNumber__box.disableUserEvents {	color: #DADADA; }
+.PageNumber__box.disableUserEvents:hover {	font-weight: normal; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
