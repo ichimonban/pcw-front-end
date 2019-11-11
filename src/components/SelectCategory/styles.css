@@ -12,8 +12,9 @@ div.HomePage__Product {	justify-content: flex-end; box-shadow: inset 0 1px 6px r
 	margin: 8px 4px; padding: 8px 12px; 
 	border-radius: 2px; 
 	}
-	.HomePage__Product > div.HomePage__Product_save_progress:hover {	background-color: #FFFFFF; color: #0065FF; border-color: #0065FF; }
-	.HomePage__Product > div.HomePage__Product_save_progress:hover {	background-color: #FFFFFF; color: #0065FF; border-color: #0065FF; }
+	.HomePage__Product > div.HomePage__Product_save_progress:last-of-type {	margin-right: 12px; }
+	.HomePage__Product > div.HomePage__Product_save_progress:active {	background-color: #FFFFFF; color: #0065FF; border-color: #0065FF; }
+	.HomePage__Product > div.HomePage__Product_save_progress:hover {	background-color: #FFFFFF; color: #0065FF; transition: all 0.5s; }
 
 .Select__category {
     max-width: 40%;
@@ -269,7 +270,12 @@ div.Question__container {
 .PageNumber__box.disableUserEvents:hover {	font-weight: normal; }
 
 
+.Page__attributes {	margin: 24px; width: 96%; max-width: none; }
 
+.Page__attributes > div {
+	display: inline-block; float: left;
+	margin: 4px; padding: 4px 12px; border: 1px solid Red; border-radius: 8px;
+}
 
 
 
