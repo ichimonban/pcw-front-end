@@ -141,11 +141,10 @@ div.HomePage__left * {
 .rc-steps-item.rc-steps-item-process.Page__title--content.currentPage,
 .rc-steps-item.rc-steps-item-wait.Page__title--content.currentPage.finish,
 .rc-steps-item.Page__title--content.false {
-	padding: 4px 0 1px 4px;
+	padding: 4px 0 0 4px;
 	border-radius: 20px;
 	text-align: left;
-	z-index: 5;
-	
+	z-index: 5;	
 }
 
 .rc-steps-item.rc-steps-item-process.Page__title--content,
@@ -157,11 +156,13 @@ div.HomePage__left * {
 	.rc-steps-vertical .rc-steps-item .rc-steps-item-title {
 		font-size: 0.75rem;
 	}
+	
+		div.rc-steps-item-icon {	border: 0px; }
 		/*-- Active Step Circle Icon --*/
 		.rc-steps-item-process.currentPage .rc-steps-item-icon,
 		.rc-steps-item.rc-steps-item-process.Page__title--content.currentPage.finish.rc-steps-item-active .rc-steps-item-icon		{
 			background-color: #FFFFFF;
-			border: none;	
+			border: 0px solid transparent;	
 		}
 		/*-- Not Completed Step Circle Icon --*/
 		.rc-steps-item.rc-steps-item-wait.false.false .rc-steps-item-icon {
@@ -173,7 +174,7 @@ div.HomePage__left * {
 		.rc-steps-item.rc-steps-item-process.Page__title--content.false.finish.rc-steps-item-active .rc-steps-item-icon,
 		.rc-steps-item.rc-steps-item-wait.Page__title--content.false.finish .rc-steps-item-icon		{
 			background-color: #0065FF;
-			border: none;
+			border-color: transparent; border-width: 0px; 
 			z-index: 100;
 		}
 	.rc-steps-vertical .rc-steps-item-process .rc-steps-item-title,
