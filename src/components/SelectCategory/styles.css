@@ -212,7 +212,7 @@ div.HomePage__left * {
 div.rc-steps-vertical div.rc-steps-item.rc-steps-item-wait.Page__title--content.false.finish .rc-steps-item-tail:after,
 .rc-steps-item.rc-steps-item-wait.Page__title--content.currentPage.finish .rc-steps-item-tail,
 .rc-steps-item.rc-steps-item-wait.Page__title--content.currentPage.finish .rc-steps-item-tail:after {
-	width: 6px; background-color: #0065FF; border: none; Z-index: -5; 
+	width: 6px; margin-top: 12px; background-color: #0065FF; border: none; Z-index: -5; 
 }
 
 div.rc-steps-vertical div.rc-steps-item.rc-steps-item-wait.Page__title--content.false.finish .rc-steps-item-tail:after {	border-left: 1px solid #0065FF; }
@@ -227,7 +227,7 @@ div.rc-steps-vertical div.rc-steps-item.rc-steps-item-wait.Page__title--content.
 .rc-steps-item.rc-steps-item-wait.Page__title--content.false.finish .rc-steps-item-tail,
 .rc-steps-item.rc-steps-item-wait.Page__title--content.currentPage.finish .rc-steps-item-tail,
 .rc-steps-item.rc-steps-item-process.Page__title--content.currentPage.finish.rc-steps-item-active .rc-steps-item-tail
-	{	 }
+	{	margin-top: -13px; }
 
 /*-- Questions --*/
 
