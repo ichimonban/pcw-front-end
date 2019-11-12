@@ -258,16 +258,17 @@ div.Question__container {
 	border-radius: 0px; border-width: 4px; border-color: #FFFFFF;
 	background-color: #FFFFFF;
 	font-size: 1rem; color: #ADADAD;
+	transition: all .5s;
 }
 
-.PageNumber__box:hover {	background-color: #FFFFFF; font-weight: bold; }
+.PageNumber__box:hover {	background-color: #FFFFFF; font-weight: bold; transition: all .5s; }
 
 .PageNumber__box.highlight,
-
 .PageNumber__box.highlight:active {	
 	background-color: #FFFFFF; 
 	border-bottom-width: 4px; border-bottom-color: Magenta; border-radius: 0 0 6px 6px;
 	font-weight: bold; color: #000000;
+	transition: all .5s;
 }
 
 .PageNumber__box.disableUserEvents {	color: #DADADA; }
