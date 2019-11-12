@@ -60,7 +60,6 @@ div.HomePage__Product {	justify-content: flex-end; margin-bottom: 0px; height: 1
     margin-left: 150px;
     background-size: contain;
     background-repeat: no-repeat;
-    /* border: 1px solid red; */
     background-image: url('../../assets/Walmart_Logos_Lockup_horiz_wht_rgb.png');
     opacity: 1;
 }
@@ -152,7 +151,7 @@ div.HomePage__left * {
 .rc-steps-item.rc-steps-item-process.Page__title--content,
 .rc-steps-item.rc-steps-item-wait.Page__title--content.false.finish,
 .rc-steps-item.rc-steps-item-wait.Page__title--content.false.false {
-	background-color: #FFFFFF;
+	background-color: transparent;
 }
 
 	.rc-steps-vertical .rc-steps-item .rc-steps-item-title {
@@ -165,7 +164,7 @@ div.HomePage__left * {
 			border: none;	
 		}
 		/*-- Not Completed Step Circle Icon --*/
-		.rc-steps-item.false.false .rc-steps-item-icon {
+		.rc-steps-item.rc-steps-item-wait.false.false .rc-steps-item-icon {
 			background-color: #FFFFFF;
 			border: 4px solid #ADADAD;	
 		}
@@ -202,7 +201,7 @@ div.HomePage__left * {
 
 .rc-steps-vertical .rc-steps-item-tail {
 	top: -5px;
-	width: 7px;
+	width: 6px; margin-left: 1px;
 }
 
 .rc-steps-item.rc-steps-item-process.Page__title--content .rc-steps-item-tail,
@@ -213,14 +212,14 @@ div.HomePage__left * {
 div.rc-steps-vertical div.rc-steps-item.rc-steps-item-wait.Page__title--content.false.finish .rc-steps-item-tail:after,
 .rc-steps-item.rc-steps-item-wait.Page__title--content.currentPage.finish .rc-steps-item-tail,
 .rc-steps-item.rc-steps-item-wait.Page__title--content.currentPage.finish .rc-steps-item-tail:after {
-	width: 7px; background-color: #0065FF; border: none; Z-index: -5; 
+	width: 6px; background-color: #0065FF; border: none; Z-index: -5; 
 }
 
 div.rc-steps-vertical div.rc-steps-item.rc-steps-item-wait.Page__title--content.false.finish .rc-steps-item-tail:after {	border-left: 1px solid #0065FF; }
 
 .rc-steps-vertical .rc-steps-item.rc-steps-item-wait.Page__title--content.false.false .rc-steps-item-tail:after	{	
-	width: 7px; 
-	margin-left: -1px; margin-top: 2px; 
+	width: 6px; 
+	margin-left: 0px; margin-top: 2px; 
 	background-color: #ADADAD; 
 }
 	
@@ -229,8 +228,6 @@ div.rc-steps-vertical div.rc-steps-item.rc-steps-item-wait.Page__title--content.
 .rc-steps-item.rc-steps-item-wait.Page__title--content.currentPage.finish .rc-steps-item-tail,
 .rc-steps-item.rc-steps-item-process.Page__title--content.currentPage.finish.rc-steps-item-active .rc-steps-item-tail
 	{	 }
-
-
 
 /*-- Questions --*/
 
@@ -241,10 +238,10 @@ div.Page__Container {
 }
 
 div.Question__container {
-	padding: 32px;
-	margin-left: 24px;
+	padding: 23px;
+	margin: 16px 16px 16px 24px;
 	background-color: #FFFFFF;
-	border-radius: 0px; border: none;
+	border: 1px solid #FFF; border-radius: 0px;
 }
 
 .Question__content {	
@@ -261,17 +258,20 @@ div.Question__container {
 	background-color: #FFFFFF;
 	font-size: 1rem; color: #ADADAD;
 }
+
 .PageNumber__box:hover {	background-color: #FFFFFF; font-weight: bold; }
 
 .PageNumber__box.highlight,
+
 .PageNumber__box.highlight:active {	
 	background-color: #FFFFFF; 
 	border-bottom-width: 4px; border-bottom-color: Magenta; border-radius: 0 0 6px 6px;
 	font-weight: bold; color: #000000;
 }
-.PageNumber__box.disableUserEvents {	color: #DADADA; }
-.PageNumber__box.disableUserEvents:hover {	font-weight: normal; }
 
+.PageNumber__box.disableUserEvents {	color: #DADADA; }
+
+.PageNumber__box.disableUserEvents:hover {	font-weight: normal; }
 
 .Page__attributes {	margin: 24px; width: 96%; max-width: none; }
 
@@ -279,7 +279,8 @@ div.Question__container {
 	display: inline-block; float: left;
 	margin: 4px; padding: 4px 12px; border: 1px solid Red; border-radius: 8px;
 }
-HomePage__footer--actions > * {	 }
+
+.HomePage__footer--actions > * {	 }
 
 
 
